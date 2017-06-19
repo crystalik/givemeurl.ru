@@ -1,0 +1,11 @@
+{
+    "require": {
+        "zendframework/zend-diactoros": "^1.4",
+        "nikic/fast-route": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Givemeurl\\": "src"
+        }
+    }
+}
