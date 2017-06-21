@@ -7,10 +7,13 @@ use FastRoute\RouteCollector;
 use FastRoute\RouteParser\Std as RouteParser;
 use FastRoute\DataGenerator\GroupCountBased as DataGenerator;
 use FastRoute\Dispatcher\GroupCountBased as GroupCountBasedDispatcher;
+use Givemeurl\Linker\Linker;
+use Givemeurl\Reducer\Reducer;
 
 /**
- * Class Dispatcher
- * @package Givemeurl
+ * Диспетчер запросов (роутер)
+ *
+ * @author Владислав Васинкин <vlad.vasinkin@yandex.ru>
  */
 class Dispatcher implements DispatcherInterface
 {
@@ -21,6 +24,7 @@ class Dispatcher implements DispatcherInterface
     {
         $routes = new RouteCollector(new RouteParser, new DataGenerator);
 
+        $routes->addRoute("GET", "/", Reducer::class);
         $routes->addRoute("GET", "/getshort[/]", Reducer::class);
         $routes->addRoute("GET", "/{short:\w+}", Linker::class);
 
