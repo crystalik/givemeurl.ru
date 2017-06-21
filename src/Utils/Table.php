@@ -3,7 +3,7 @@
 namespace Givemeurl\Utils;
 
 /**
- * Table Getaway для short_url
+ * Table Gateway для short_url
  *
  * @author Владислав Васинкин <vlad.vasinkin@yandex.ru>
  */

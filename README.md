@@ -1,6 +1,6 @@
 # WARNING!
 
-This is test task, don't use in production.
+This is a test task, don't use in production.
 
 # Requirements
 
@@ -10,7 +10,7 @@ This is test task, don't use in production.
 
 # Install
 
-Clone source code to your directory
+Clone source code to your www/ directory
 
 Set php fastcgi_pass to your php in `givemeurl.ru.conf` - `location ~ \.php$`
 
