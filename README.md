@@ -1,3 +1,5 @@
+This is the url shortener. No frameworks, only some components.
+
 # WARNING!
 
 This is a test task, don't use in production.
